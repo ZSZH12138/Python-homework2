@@ -1,6 +1,6 @@
 # Python-homework2
 This is the second homework of my python class.  
-You need to install numpy, matplotlib and sklearn for these code.
+You need to install numpy, matplotlib and sklearn for these code.  
 The first file is preview_of_data.py which shows the based style of all the graphs.  
 Then comes the homework.  
 Mission 1使用了不同的分类器对两个特征进行三分类 并将所有的分类结果用一张画布展示  
