@@ -130,10 +130,11 @@ for sub in range(3):
         ax.set_xlabel(axenames[sub], fontsize=9, color=TEXT_COLOR)
         ax.set_ylabel(axenames[sub+1] if sub<2 else axenames[0], fontsize=9, color=TEXT_COLOR)
         ax.set_zlabel("Logit", fontsize=9, color=TEXT_COLOR)
-        ax.set_title(
-            titles[idx%3]+titles_las[sub-1] if sub>0 else titles[idx%3]+titles_las[2],
-            fontsize=11, fontweight='bold', color=TEXT_COLOR, pad=0 
-        )
+        if sub==0:
+            ax.set_title(
+                titles[idx%3]+titles_las[sub-1] if sub>0 else titles[idx%3]+titles_las[2],
+                fontsize=11, fontweight='bold', color=TEXT_COLOR, pad=0
+            )
         ax.tick_params(axis='x', colors=TEXT_COLOR, labelsize=7)
         ax.tick_params(axis='y', colors=TEXT_COLOR, labelsize=7)
         ax.tick_params(axis='z', colors=TEXT_COLOR, labelsize=7)
