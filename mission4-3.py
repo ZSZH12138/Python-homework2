@@ -103,9 +103,9 @@ def plot_logit_surfaces(fixed_z_idx, clf, norm_logit, levels, cmap_to_use):
             ax.set_xlabel(AXE_NAMES[x_idx], fontsize=9, color=TEXT_COLOR)
             ax.set_ylabel(AXE_NAMES[y_idx], fontsize=9, color=TEXT_COLOR)
             ax.set_zlabel(f"Logit L({CLASS_NAMES[row_class]})", fontsize=9, color=TEXT_COLOR)
-
-            ax.set_title(TITLES_COL[col_slice], fontsize=11, fontweight='bold',
-                         color=TEXT_COLOR, pad=0)
+            if row_class==0:
+                ax.set_title(TITLES_COL[col_slice], fontsize=11, fontweight='bold',
+                             color=TEXT_COLOR, pad=0)
 
             ax.tick_params(axis='both', colors=TEXT_COLOR, labelsize=7)
             ax.grid(axis='both', linestyle='--', alpha=0.25, color='#777777')
