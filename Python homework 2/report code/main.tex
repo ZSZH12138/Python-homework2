@@ -12,6 +12,8 @@
 \usepackage{fontspec}    % 字体支持
 \usepackage{xeCJK}       % 中文字体支持
 \setCJKmainfont{Noto Serif CJK SC} % 设置中文字体（Overleaf自带Noto字体）
+\usepackage{graphicx}
+\usepackage{subcaption}
 
 % ----------------------------
 % 页面设置与常用宏包
@@ -107,16 +109,61 @@
 \end{enumerate}
 
 \section{实验结果}
-部分实验结果如图~\ref{fig:vit-arch2}所示，注意：并非全部实验结果。
-\begin{figure}[t]
-    \centering
-    \includegraphics[width=0.92\linewidth]{figs/parts_of_mission4-3.png}
-    \caption{4-3的部分结果展示}
-    \label{fig:vit-arch2}
+部分实验结果如图所示，注意：并非全部实验结果。
+\begin{figure}[htbp]
+\centering
+
+% 第一行 3 张
+\begin{subfigure}{0.3\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figs/part1_of_mission4-3.png}
+\caption{Part 1 of Mission 4-3}
+\end{subfigure}
+\begin{subfigure}{0.3\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figs/part2_of_mission4-3.png}
+\caption{Part 2 of Mission 4-3}
+\end{subfigure}
+\begin{subfigure}{0.3\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figs/part3_of_mission4-3.png}
+\caption{Part 3 of Mission 4-3}
+\end{subfigure}
+
+\vspace{0.3em}
+
+% 第二行 2 张
+\begin{subfigure}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figs/mission1.png}
+\caption{Mission 1}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figs/mission2.png}
+\caption{Mission 2}
+\end{subfigure}
+
+\vspace{0.3em}
+
+% 第三行 2 张
+\begin{subfigure}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figs/mission3.png}
+\caption{Mission 3}
+\end{subfigure}
+\begin{subfigure}{0.45\textwidth}
+\centering
+\includegraphics[width=\linewidth]{figs/mission4-1.png}
+\caption{Mission 4-1}
+\end{subfigure}
+
+\caption{七张图片的整体展示}
 \end{figure}
 
+
 \section{讨论}
-本次实验我们学会了如何对一个数据集进行可视化，由上述结果看来我已经基本掌握了可视化的基本步骤。然而本次实验确实仍有不足之处，比如实验4-3中你会发现，其投影只有xOy面的投影（当然xOy面投影已经展示了基本上所有有用信息），原因是因为不知道为什么，我明明使用了和任务3一样的投影方式，4-3的侧面投影颜色总是出现错误，与AI交互多次也无果。但总体而言，每个可视化图像均可以清晰地展示数据的分类以及决策边界，也算是圆满完成任务。
+本次实验我们学会了如何对一个数据集进行可视化，由上述结果看来我已经基本掌握了可视化的基本步骤。然而本次实验确实仍有不足之处，比如实验4-3中你会发现，其投影只有xOy面的投影（当然xOy面投影已经展示了基本上所有有用信息），原因是因为不知道为什么，我明明使用了和任务3一样的投影方式，4-3的侧面投影颜色总是出现错误，与AI交互多次也无果。但总体而言，每个可视化图像均可以清晰地展示数据的分类以及决策边界，也算是圆满完成任务。此代码已上传至GitHub，链接为https://github.com/ZSZH12138/Python-homework2。
 
 \newpage
 
